@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <h1 class="col-12"> Material </h1> 
+  <div class="row">
+    <h3 class="col-12"> Formulaire : </h3>
+    <form [formGroup]="form" class="col-6 mx-auto"><br/><br/>
+
+      <input type="text" formControlName="input"><br/><br/>
+
+      <input type="checkbox" formControlName="checkbox"><br/><br/>
+
+      <input type="radio" value="Femme" formControlName="radio">Femme <br/>
+      <input type="radio" value="homme" formControlName="radio">Homme <br/><br/>
+
+      <input type="radio" value="Femme" formControlName="slidetoggle">Femme <br/>
+      <input type="radio" value="homme" formControlName="slidetoggle">Homme <br/><br/>
+
+      <pre> {{ form.value | json }} </pre>
+      
+    </form>
+  </div> 
+
+</div>

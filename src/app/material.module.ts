@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-//import {  } from '@angular/material';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
 
 const MATERIAL = [
-		
+		MatFormFieldModule,
+		MatInputModule
 	]
 
 @NgModule({

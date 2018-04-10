@@ -4,7 +4,10 @@
     <h3 class="col-12"> Formulaire : </h3>
     <form [formGroup]="form" class="col-6 mx-auto"><br/><br/>
 
-      <input type="text" formControlName="input"><br/><br/>
+      <!-- <input type="text" formControlName="input"><br/><br/> -->
+      <mat-form-field>
+        <input matInput Type="text" formControlName="input">
+      </mat-form-field><br><br>
 
       <input type="checkbox" formControlName="checkbox"><br/><br/>
 

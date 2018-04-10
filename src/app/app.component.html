@@ -5,8 +5,12 @@
     <form [formGroup]="form" class="col-6 mx-auto"><br/><br/>
 
       <!-- <input type="text" formControlName="input"><br/><br/> -->
-      <mat-form-field>
-        <input matInput Type="text" formControlName="input">
+      <mat-form-field floatPlaceholder="always"> 
+        <!-- comportement floatPlaceholder:  -->
+        <!-- "always" : toujours en haut -->
+        <!-- "never" : sur la ligne -->
+        <!-- "" : monte sur le haut -->
+        <input matInput Type="text" formControlName="input" placeholder="name">
       </mat-form-field><br><br>
 
       <!-- <input type="checkbox" formControlName="checkbox"><br/><br/> -->

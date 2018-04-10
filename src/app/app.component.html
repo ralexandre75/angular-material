@@ -5,13 +5,14 @@
     <form [formGroup]="form" class="col-6 mx-auto"><br/><br/>
 
       <!-- <input type="text" formControlName="input"><br/><br/> -->
-      <mat-form-field> 
+      <mat-form-field hintLabel="Quel est votre prenom ?"> 
         <mat-placeholder floatPlaceholder="always"> Name </mat-placeholder>
         <!-- comportement floatPlaceholder:  -->
         <!-- "always" : toujours en haut -->
         <!-- "never" : sur la ligne -->
         <!-- "" : monte sur le haut -->
-        <input matInput Type="text" formControlName="input" >
+        <input matInput Type="text" formControlName="input">
+        <!-- <mat-hint>Quel est votre nom ?</mat-hint> -->
       </mat-form-field><br><br>
 
       <!-- <input type="checkbox" formControlName="checkbox"><br/><br/> -->

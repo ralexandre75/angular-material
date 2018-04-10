@@ -12,8 +12,13 @@
       <!-- <input type="checkbox" formControlName="checkbox"><br/><br/> -->
       <mat-checkbox formControlName="checkbox"> Vrai/Faux </mat-checkbox><br><br>
 
-      <input type="radio" value="Femme" formControlName="radio">Femme <br/>
-      <input type="radio" value="homme" formControlName="radio">Homme <br/><br/>
+      <!-- <input type="radio" value="Femme" formControlName="radio">Femme <br/> -->
+      <!-- <input type="radio" value="homme" formControlName="radio">Homme <br/><br/> -->
+      <mat-radio-group formControlName="radio">
+        <mat-radio-button value="Femme">Femme</mat-radio-button>
+        <mat-radio-button value="Homme">Homme</mat-radio-button>
+      </mat-radio-group><br><br>
+
 
       <input type="radio" value="Femme" formControlName="slidetoggle">Femme <br/>
       <input type="radio" value="homme" formControlName="slidetoggle">Homme <br/><br/>

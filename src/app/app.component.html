@@ -48,8 +48,14 @@
 
       <mat-slider min="0" max="10" formControlName="range"></mat-slider><br><br>
 
-      <input type="date" formControlName="date"/><br><br>
+      <!-- <input type="date" formControlName="date"/><br><br> -->
 
+      <mat-form-field>
+        <input matInput placeholder="Choisir une date" [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle> 
+          <!-- matSuffix : icone à droite ; matPrefix : icone à gauche -->
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
       <pre> {{ form.value | json }} </pre>
       
     </form>

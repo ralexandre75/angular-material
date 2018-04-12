@@ -28,6 +28,24 @@
       <!-- <input type="radio" value="homme" formControlName="slidetoggle">Homme <br/><br/> -->
       <mat-slide-toggle formControlName="slidetoggle"> Newsletter ? </mat-slide-toggle><br>
 
+      <!-- <select formControlName="select">
+        <option value=""> Food </option>
+        <option value="pain"> Pain </option>
+        <option value="pate"> Pate </option>
+        <option value="pizza"> Pizza </option>
+      </select><br><br> -->
+
+      <mat-form-field>
+        <mat-select formControlName="select" placeholder="food">
+          <mat-option value="pain"> Pain </mat-option>
+          <mat-option value="pate"> Pate </mat-option>
+          <mat-option value="pizza"> Pizza </mat-option>
+        </mat-select>
+      </mat-form-field><br><br>
+      <input type="range" min="0" max="10" formControlName="range"/><br><br>
+
+      <input type="date" formControlName="date"/><br><br>
+
       <pre> {{ form.value | json }} </pre>
       
     </form>

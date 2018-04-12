@@ -55,7 +55,18 @@
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle> 
           <!-- matSuffix : icone à droite ; matPrefix : icone à gauche -->
         <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
+      </mat-form-field><br><br>
+
+      <!-- autocomplete -->
+
+      <mat-form-field>
+        <input matInput formControlName="auto" [matAutocomplete]="autoc" placeholder="Choisir un nombre">
+      </mat-form-field><br><br>
+
+      <mat-autocomplete #autoc="matAutocomplete">
+        <mat-option *ngFor="let option of filterOptions | async" [value]="option">{{ option }}</mat-option>
+      </mat-autocomplete>
+
       <pre> {{ form.value | json }} </pre>
       
     </form>

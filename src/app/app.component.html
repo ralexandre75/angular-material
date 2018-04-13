@@ -65,6 +65,16 @@
 
       <mat-autocomplete #autoc="matAutocomplete">
         <mat-option *ngFor="let option of filterOptions | async" [value]="option">{{ option }}</mat-option>
+      </mat-autocomplete><br><br>
+
+      <mat-form-field>
+      <input matInput formControlName="city" type="text" (input)="filtrer($event.target.value)" placeholder="Choisissez votre pays favori" aria-label="Text" matInput [matAutocomplete]="autop">
+      </mat-form-field><br><br>
+
+      <mat-autocomplete #autop>
+        <mat-option *ngFor="let city of filteredCities" [value]="city">
+          {{ city }}
+        </mat-option>
       </mat-autocomplete>
 
       <pre> {{ form.value | json }} </pre>
